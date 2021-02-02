@@ -7,4 +7,8 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
   end
+
+  def unrestful_method
+    @item = Item.all
+  end
 end
